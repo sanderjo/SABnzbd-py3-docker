@@ -14,7 +14,7 @@ RUN cd / && git clone https://github.com/sabnzbd/sabnzbd.git && \
 	pip3 install -r requirements.txt -U && \
 	tools/make_mo.py 
 
-CMD sabnzbd/SABnzbd.py -b0 --server 0.0.0.0:8080
+CMD env LANG=en_US.UTF-8 sabnzbd/SABnzbd.py -b0 --server 0.0.0.0:8080
 
 RUN echo 'Hi, I am in your container'
 
