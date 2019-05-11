@@ -17,7 +17,7 @@ sudo docker build --no-cache -t="sabnzbd-py3" .
 
 ## Run
 ```
-sudo docker run -p 8080:8080 --name sabnzbd-py3 sabnzbd-py3
+sudo docker run -p 8080:8080 --name sabnzbd-py3
 ```
 ## Access
 
